@@ -1,5 +1,5 @@
 class NoOvertime {
-	public int noOvertime(int no, int[] works) {
+  public int noOvertime(int no, int[] works) {
     while(no>0){
       int largestNumberIndex = getLargestNumberIndex(works);
       works[largestNumberIndex] -= 1;
