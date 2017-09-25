@@ -5,8 +5,6 @@ function noOvertime(no, works) {
 		works[largestNumberIndex] -= 1;
 		no -= 1;
 	}
-	
-
 	return getOverTimeNumber(works);
 }
 
