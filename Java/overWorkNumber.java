@@ -5,8 +5,8 @@ class NoOvertime {
       works[largestNumberIndex] -= 1;
       no -= 1;
     }
-		return getOverTimeNumber(works);
-	}
+    return getOverTimeNumber(works);
+  }
   
   public int getLargestNumberIndex(int[] arr){
     int maxNum = 0;
@@ -29,10 +29,10 @@ class NoOvertime {
     return answer;
   }
   
-	public static void main(String[] args) {
-		NoOvertime c = new NoOvertime();
-		int []test = {4,3,3};
+  public static void main(String[] args) {
+    NoOvertime c = new NoOvertime();
+    int []test = {4,3,3};
     // System.out.println(c.getOverTimeNumber(test));
-		System.out.println(c.noOvertime(4,test));
-	}
+    System.out.println(c.noOvertime(4,test));
+  }
 }
