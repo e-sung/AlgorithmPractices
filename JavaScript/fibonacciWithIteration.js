@@ -3,16 +3,16 @@ function fib(n) {
         return 1
     }
 
-    var i = 3;
-    var a = 1;
-    var b = 1;
-    var ithFib = a + b;
+    var iterator = 3;
+    var currentFib = 1;
+    var prevFib = 1;
+    var ithFib = currentFib + prevFib;
 
     while (i < n) {
-        i += 1;
-        b = a;
-        a = ithFib
-        ithFib = a + b;
+        iterator += 1;
+        prevFib = currentFib;
+        currentFib = ithFib
+        ithFib = prevFib + currentFib;
     }
     return ithFib;
 }
